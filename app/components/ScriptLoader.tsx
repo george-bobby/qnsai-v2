@@ -18,15 +18,34 @@ const ScriptLoader: React.FC = () => {
       "assets/js/space.js"
     ];
 
-    scripts.forEach((src) => {
-      const script = document.createElement("script");
-      script.src = src;
-      script.async = true;
-      script.onload = () => {
-        console.log(`${src} loaded`);
-      };
-      document.body.appendChild(script);
-    });
+    const loadScript = (src: string) => {
+      return new Promise<void>((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = src;
+        script.defer = true; // Ensure scripts are loaded in order
+        script.onload = () => {
+          console.log(`${src} loaded successfully`);
+          resolve();
+        };
+        script.onerror = () => {
+          console.error(`Failed to load ${src}`);
+          reject(new Error(`Failed to load script: ${src}`));
+        };
+        document.body.appendChild(script);
+      });
+    };
+
+    const loadScripts = async () => {
+      for (let i = 0; i < scripts.length; i++) {
+        try {
+          await loadScript(scripts[i]);
+        } catch (error) {
+          console.error(error);
+        }
+      }
+    };
+
+    loadScripts();
 
     return () => {
       // Cleanup: Remove the scripts when the component unmounts

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 
 const PricingSection: React.FC = () => {
@@ -36,9 +37,9 @@ const PricingSection: React.FC = () => {
                 </ul>
               </div>
               <div className="ud-pricing-footer">
-                <a href="signup.html" className="ud-main-btn ud-border-btn">
+                <Link href="/signup" className="ud-main-btn ud-border-btn">
                   Free
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -63,9 +64,9 @@ const PricingSection: React.FC = () => {
                 </ul>
               </div>
               <div className="ud-pricing-footer">
-                <a href="signup.html" className="ud-main-btn ud-white-btn">
+                <Link href="/signup" className="ud-main-btn ud-white-btn">
                   $19.99/mo
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -89,9 +90,9 @@ const PricingSection: React.FC = () => {
                 </ul>
               </div>
               <div className="ud-pricing-footer">
-                <a href="signup.html" className="ud-main-btn ud-border-btn">
+                <Link href="/contact" className="ud-main-btn ud-border-btn">
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -99,6 +100,6 @@ const PricingSection: React.FC = () => {
       </div>
     </section>
   );
-}
+};
 
 export default PricingSection;

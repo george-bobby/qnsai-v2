@@ -1,26 +1,21 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function ScrollToTopButton() {
-  useEffect(() => {
-    const button = document.querySelector(".scroll-top") as HTMLElement | null;
+  const [showButton, setShowButton] = useState(false);
 
+  useEffect(() => {
     // Handle the scroll event and show the button when scrolling past 200px.
     const handleScroll = () => {
-      if (window.scrollY > 200 && button) {
-        button.style.display = "block";
-      } else if (button) {
-        button.style.display = "none";
+      if (window.scrollY > 200) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
       }
     };
 
     // Add event listener for scroll.
     window.addEventListener("scroll", handleScroll);
-
-    // Add click event listener to scroll the page to the top.
-    button?.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
 
     // Cleanup the event listeners when the component is unmounted.
     return () => {
@@ -28,9 +23,23 @@ export default function ScrollToTopButton() {
     };
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <a href="#" className="scroll-top btn-hover">
-      <i className="lni lni-chevron-up"></i>
-    </a>
+    showButton && (
+      <a
+        href="#"
+        className="scroll-top btn-hover"
+        onClick={(e) => {
+          e.preventDefault(); // Prevent default anchor behavior
+          scrollToTop();
+        }}
+        aria-label="Scroll to top"
+      >
+        <i className="lni lni-chevron-up"></i>
+      </a>
+    )
   );
 }

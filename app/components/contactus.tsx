@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const contactus: React.FC = () => {
+const ContactUs: React.FC = () => {
   useEffect(() => {
     // Dynamically load external scripts
     const scripts = [
@@ -64,34 +64,11 @@ const contactus: React.FC = () => {
                     <ul id="nav" className="navbar-nav ml-auto">
                       <li className="nav-item">
                         <a href="index.html">Home</a>
-                        <ul className="sub-menu">
-                          <li><a href="index.html">Creative Agency</a></li>
-                          <li><a href="../../index.html">Mobile App</a></li>
-                          <li><a href="index3.html">Web App</a></li>
-                          <li><a href="index4.html">Personal Portfolio</a></li>
-                        </ul>
                       </li>
                       <li className="nav-item"><a href="about-us.html">About Us</a></li>
-                      <li className="nav-item"><a href="#">Services</a>
-                        <ul className="sub-menu">
-                          <li><a href="services.html">Services</a></li>
-                          <li><a href="service-single.html">Service Details</a></li>
-                        </ul>
-                      </li>
-                      <li className="nav-item"><a href="#">Portfolio</a>
-                        <ul className="sub-menu">
-                          <li><a href="portfolio.html">Portfolio</a></li>
-                          <li><a href="portfolio-single.html">Portfolio Details</a></li>
-                        </ul>
-                      </li>
-                      <li className="nav-item"><a href="#">Pages</a>
-                        <ul className="sub-menu">
-                          <li><a href="about-us.html">About Us</a></li>
-                          <li><a href="pricing.html">Our Pricing</a></li>
-                          <li><a href="404.html">404 Error</a></li>
-                          <li><a href="mail-success.html">Mail Success</a></li>
-                        </ul>
-                      </li>
+                      <li className="nav-item"><a href="#">Services</a></li>
+                      <li className="nav-item"><a href="#">Portfolio</a></li>
+                      <li className="nav-item"><a href="#">Pages</a></li>
                       <li className="nav-item"><a href="contact.html" className="active">Contact</a></li>
                     </ul>
                   </div>
@@ -114,7 +91,6 @@ const contactus: React.FC = () => {
                 <h1 className="page-title">Contact Us</h1>
                 <p>
                   Business plan draws on a wide range of knowledge from different business disciplines.
-                  Business draws on a wide range of different business.
                 </p>
               </div>
               <ul className="breadcrumb-nav">
@@ -135,24 +111,24 @@ const contactus: React.FC = () => {
                 <div className="single-head">
                   <div className="contant-inner-title">
                     <h4>Contact Information</h4>
-                    <p>Business consulting excepteur sint occaecat cupidatat consulting non proident.</p>
+                    <p>Business consulting excepteur sint occaecat cupidatat.</p>
                   </div>
                   <div className="single-info">
                     <i className="lni lni-phone"></i>
                     <ul>
-                      <li>+522 672-452-1120</li>
+                      <li><a href="tel:+5226724521120">+522 672-452-1120</a></li>
                     </ul>
                   </div>
                   <div className="single-info">
                     <i className="lni lni-envelope"></i>
                     <ul>
-                      <li><a href="mailto:[email&#160;protected]">[email&#160;protected]</a></li>
+                      <li><a href="mailto:example@example.com">example@example.com</a></li>
                     </ul>
                   </div>
                   <div className="single-info">
                     <i className="lni lni-map"></i>
                     <ul>
-                      <li>KA-62/1, Travel Agency, 45 Grand Central Terminal, New York.</li>
+                      <li>KA-62/1, Travel Agency, New York.</li>
                     </ul>
                   </div>
                   <div className="contact-social">
@@ -217,16 +193,12 @@ const contactus: React.FC = () => {
           <div className="row">
             <div className="col-12">
               <div className="map-container">
-                <div className="mapouter">
-                  <div className="gmap_canvas">
-                    <iframe
-                      width="100%"
-                      height="400"
-                      id="gmap_canvas"
-                      src="https://maps.google.com/maps?q=bangladesh%20lakshmipur&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    ></iframe>
-                  </div>
-                </div>
+                <iframe
+                  title="Google Map"
+                  width="100%"
+                  height="400"
+                  src="https://maps.google.com/maps?q=bangladesh%20lakshmipur&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -242,7 +214,7 @@ const contactus: React.FC = () => {
                 <div className="footer-logo">
                   <img className="logo1" src="assets/images/logo/logo.svg" alt="Logo" />
                 </div>
-                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-3 col-12">
@@ -261,7 +233,7 @@ const contactus: React.FC = () => {
                 <h6 className="footer-title">Contact Info</h6>
                 <ul className="footer-contact">
                   <li><i className="lni lni-phone"></i>+522 672-452-1120</li>
-                  <li><i className="lni lni-envelope"></i><a href="mailto:[email&#160;protected]">[email&#160;protected]</a></li>
+                  <li><i className="lni lni-envelope"></i><a href="mailto:example@example.com">example@example.com</a></li>
                   <li><i className="lni lni-map"></i>KA-62/1, New York</li>
                 </ul>
               </div>
@@ -273,4 +245,4 @@ const contactus: React.FC = () => {
   );
 };
 
-export default contactus;
+export default ContactUs;

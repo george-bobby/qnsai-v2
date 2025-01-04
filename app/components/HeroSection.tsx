@@ -9,6 +9,7 @@ const HeroSection: React.FC = () => {
         className="shape"
         src="/assets/images/hero/img-wave.png"
         alt="Wave Background"
+        layout="intrinsic"  // This ensures proper aspect ratio handling
         width={1920}
         height={1080}
         priority
@@ -16,6 +17,7 @@ const HeroSection: React.FC = () => {
       <div className="hero-inner">
         <div className="container">
           <div className="row">
+            {/* Left Column */}
             <div className="col-lg-6 col-12">
               <div className="home-slider">
                 <div className="hero-text">
@@ -25,13 +27,16 @@ const HeroSection: React.FC = () => {
                     <strong> WE HAVE THE SOLUTION</strong>
                   </p>
                   <div className="button">
-                    <Link href="/signup" passHref>
-                      <a className="btn">Generate Questions</a>
-                    </Link>
+                  <Link href="/signup" className="btn">
+                    Generate Questions
+                  </Link>
+
                   </div>
                 </div>
               </div>
             </div>
+
+            {/* Right Column */}
             <div className="col-lg-6 col-12">
               <div className="mobile-screen">
                 <Image

@@ -21,19 +21,43 @@ const OverviewSection: React.FC = () => {
                 {/* Tabs */}
                 <ul className="nav nav-tabs" id="myTab" role="tablist">
                   <li className="nav-item">
-                    <a className="nav-link active" data-toggle="tab" href="#t-tab1" role="tab">
-                      Students
-                    </a>
-                  </li>
                   <li className="nav-item">
-                    <a className="nav-link" data-toggle="tab" href="#t-tab2" role="tab">
-                      Teachers
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" data-toggle="tab" href="#t-tab3" role="tab">
-                      EdTech
-                    </a>
+                  <a
+                    className="nav-link active"
+                    data-toggle="tab"
+                    href="#t-tab1"
+                    role="tab"
+                    aria-controls="t-tab1"
+                    aria-selected="true"
+                  >
+                    Students
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    data-toggle="tab"
+                    href="#t-tab2"
+                    role="tab"
+                    aria-controls="t-tab2"
+                    aria-selected="false"
+                  >
+                    Teachers
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    data-toggle="tab"
+                    href="#t-tab3"
+                    role="tab"
+                    aria-controls="t-tab3"
+                    aria-selected="false"
+                  >
+                    EdTech
+                  </a>
+                </li>
+
                   </li>
                 </ul>
 

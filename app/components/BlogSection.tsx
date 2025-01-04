@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const BlogSection: React.FC = () => {
   return (
@@ -24,9 +25,9 @@ const BlogSection: React.FC = () => {
           <div className="col-lg-4 col-md-6 col-12">
             <div className="single-news wow fadeInUp" data-wow-delay=".2s">
               <div className="image">
-                <a href="#">
+                <Link href="#">
                   <img className="thumb" src="assets/images/blog/blog-grid1.jpg" alt="QnsAI For Students" />
-                </a>
+                </Link>
                 <div className="meta-details">
                   <img src="assets/images/blog/author.jpg" alt="Tim Norton" />
                   <span>BY TIM NORTON</span>
@@ -34,7 +35,7 @@ const BlogSection: React.FC = () => {
               </div>
               <div className="content-body">
                 <h4 className="title" style={{ textAlign: 'center' }}>
-                  <a href="#">QnsAI For Students</a>
+                  <Link href="#">QnsAI For Students</Link>
                 </h4>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
@@ -43,12 +44,13 @@ const BlogSection: React.FC = () => {
               </div>
             </div>
           </div>
+
           <div className="col-lg-4 col-md-6 col-12">
             <div className="single-news wow fadeInUp" data-wow-delay=".4s">
               <div className="image">
-                <a href="#">
+                <Link href="#">
                   <img className="thumb" src="assets/images/blog/blog-grid2.jpg" alt="QnsAI For Schools" />
-                </a>
+                </Link>
                 <div className="meta-details">
                   <img src="assets/images/blog/author.jpg" alt="Tim Norton" />
                   <span>BY TIM NORTON</span>
@@ -56,7 +58,7 @@ const BlogSection: React.FC = () => {
               </div>
               <div className="content-body">
                 <h4 className="title" style={{ textAlign: 'center' }}>
-                  <a href="#">QnsAI For Schools</a>
+                  <Link href="#">QnsAI For Schools</Link>
                 </h4>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
@@ -65,12 +67,13 @@ const BlogSection: React.FC = () => {
               </div>
             </div>
           </div>
+
           <div className="col-lg-4 col-md-6 col-12">
             <div className="single-news wow fadeInUp" data-wow-delay=".6s">
               <div className="image">
-                <a href="#">
+                <Link href="#">
                   <img className="thumb" src="assets/images/blog/blog-grid3.jpg" alt="QnsAI For EdTech" />
-                </a>
+                </Link>
                 <div className="meta-details">
                   <img src="assets/images/blog/author.jpg" alt="Tim Norton" />
                   <span>BY TIM NORTON</span>
@@ -78,7 +81,7 @@ const BlogSection: React.FC = () => {
               </div>
               <div className="content-body">
                 <h4 className="title" style={{ textAlign: 'center' }}>
-                  <a href="#">QnsAI For EdTech</a>
+                  <Link href="#">QnsAI For EdTech</Link>
                 </h4>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has

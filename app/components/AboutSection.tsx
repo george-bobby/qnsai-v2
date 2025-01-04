@@ -15,7 +15,7 @@ const AboutSection: React.FC = () => {
               >
                 <Image
                   src="/assets/img/blooms.png"
-                  alt="Bloom's Taxonomy"
+                  alt="Bloom's Taxonomy Model"
                   width={500}
                   height={500}
                   priority
@@ -24,7 +24,7 @@ const AboutSection: React.FC = () => {
                   <h3>Bloom's Taxonomy</h3>
                   <p>
                     It is a model that categorizes learning objectives into varying levels of
-                    complexity, from remembering to creating things.
+                    complexity, from remembering to creating.
                   </p>
                 </div>
               </div>
@@ -35,7 +35,9 @@ const AboutSection: React.FC = () => {
           <div className="col-xl-6 col-lg-6">
             <div className="about-content-wrapper">
               <div className="section-title2">
-                <span className="wow fadeInUp" data-wow-delay=".2s">Working Principle</span>
+                <span className="wow fadeInUp" data-wow-delay=".2s">
+                  Working Principle
+                </span>
                 <h2 className="mb-40 wow fadeInRight" data-wow-delay=".4s">
                   Generate questions of different difficulty levels.
                 </h2>
