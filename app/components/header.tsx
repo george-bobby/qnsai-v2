@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const header: React.FC = () => {
+const Header: React.FC = () => {
   return (
     <header className="header index2">
       <div className="navbar-area">
@@ -65,4 +65,4 @@ const header: React.FC = () => {
   );
 };
 
-export default header;
+export default Header;
