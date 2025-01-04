@@ -1,41 +1,85 @@
-import Link from 'next/link';
+import React from "react";
 
-const Footer = () => {
+const footer: React.FC = () => {
   return (
-    <footer className="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
-      <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          © 2025{' '}
-          <Link href="https://qnsai.vercel.app/" className="hover:underline">
-            QnsAI 
-          </Link>
-          . All Rights Reserved.
-        </span>
-        <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-          <li>
-            <Link href="#" className="hover:underline me-4 md:me-6">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className="hover:underline me-4 md:me-6">
-              Privacy Policy
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className="hover:underline me-4 md:me-6">
-              Licensing
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className="hover:underline">
-              Contact
-            </Link>
-          </li>
-        </ul>
+    <footer className="footer">
+      <div className="footer-middle">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-3 col-md-6 col-12">
+              <div className="f-about single-footer">
+                <div className="logo">
+                  <a href="index.html">
+                    <img src="assets/logos/lmno.png" alt="Logo" />
+                  </a>
+                </div>
+                <p>
+                  QnsAI is a tool to generate question papers with the help of AI and NLP. We also have a
+                  database to create mock question papers for competitive exams.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-12">
+              <div className="single-footer f-link">
+                <h3>Home</h3>
+                <ul>
+                  <li><a href="#overview">Overview</a></li>
+                  <li><a href="#pricing">Pricing</a></li>
+                  <li><a href="#features">Features</a></li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-12">
+              <div className="single-footer f-link">
+                <h3>Use Cases</h3>
+                <ul>
+                  <li><a href="#overview">Schools</a></li>
+                  <li><a href="#overview">Students</a></li>
+                  <li><a href="#overview">EdTech</a></li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-12">
+              <div className="single-footer f-link">
+                <h3>Support</h3>
+                <ul>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <div className="container">
+          <div className="inner">
+            <div className="row">
+              <div className="col-12">
+                <div className="left">
+                  <p>
+                    Copyright © QnsAI 2022
+                    <a
+                      href="//www.dmca.com/Protection/Status.aspx?ID=66185ecb-ffa9-4830-a815-476a603bd335"
+                      title="DMCA.com Protection Status"
+                      className="dmca-badge"
+                    >
+                      <img
+                        src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-10.png?ID=66185ecb-ffa9-4830-a815-476a603bd335"
+                        alt="DMCA.com Protection Status"
+                      />
+                    </a>
+                    <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   );
 };
 
-export default Footer;
+export default footer;
