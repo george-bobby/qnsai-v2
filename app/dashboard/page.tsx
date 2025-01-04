@@ -1,6 +1,6 @@
 import { UserDetails } from "../components/user-details";
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 
 
 export default async function DashboardPage() {
