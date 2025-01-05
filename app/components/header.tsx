@@ -44,39 +44,39 @@ const Header: React.FC = () => {
 
                 {/* Navigation Links */}
                 <div
-                  className={`collapse navbar-collapse sub-menu-bar ${
-                    isMenuOpen ? "show" : ""
-                  }`}
+                  className={`collapse navbar-collapse sub-menu-bar ${isMenuOpen ? "show" : ""
+                    }`}
                   id="navbarSupportedContent"
                 >
                   <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                      <Link href="#features">
-                        <a className="nav-link">Features</a>
+                      <Link href="#features" className="nav-link">
+                        Features
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link href="#overview">
-                        <a className="nav-link">Use Cases</a>
+                      <Link href="#overview" className="nav-link">
+                        Use Cases
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link href="#pricing">
-                        <a className="nav-link">Pricing</a>
+                      <Link href="#pricing" className="nav-link">
+                        Pricing
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link href="#contact">
-                        <a className="nav-link">Contact</a>
+                      <Link href="#contact" className="nav-link">
+                        Contact
                       </Link>
                     </li>
                   </ul>
+
                 </div>
 
                 {/* Get Started Button */}
                 <div className="button ml-4">
-                  <Link href="/signup">
-                    <a className="btn">Get Started</a>
+                  <Link href="/signup" className="btn">
+                    Get Started
                   </Link>
                 </div>
               </nav>
