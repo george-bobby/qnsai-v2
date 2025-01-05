@@ -53,7 +53,7 @@ const FeaturesSection: React.FC = () => {
           <Image
             className="service-pattern wow fadeInLeft"
             data-wow-delay=".4s"
-            src="/assets/images/service/service-pattern.png"
+            src="./components//assets/images/service/service-pattern.png"
             alt="Service Pattern"
             width={500}
             height={500}
