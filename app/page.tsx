@@ -1,6 +1,6 @@
 import { SignInButton, SignedIn, SignedOut } from "@clerk/nextjs";
 import Link from "next/link";
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 import Header from "./components/header";
 import HeroSection from "./components/HeroSection";
 import FeaturesSection from "./components/FeaturesSection";
