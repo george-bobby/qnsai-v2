@@ -1,7 +1,7 @@
 import { SignInButton, SignedIn, SignedOut } from "@clerk/nextjs";
 import Link from "next/link";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Header from "./components/header";
 import HeroSection from "./components/HeroSection";
 import FeaturesSection from "./components/FeaturesSection";
 import OverviewSection from "./components/OverviewSection";
@@ -14,7 +14,7 @@ import NewsletterSection from "./components/NewsletterSection";
 import BrandArea from "./components/BrandArea";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import ScriptLoader from "./components/ScriptLoader";
-import Head from "next/head"; // Import Head from Next.js
+import Head from "next/head"; 
 
 const Home: React.FC = () => {
   return (

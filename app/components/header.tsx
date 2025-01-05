@@ -1,48 +1,82 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const Header: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="header index2">
       <div className="navbar-area">
         <div className="container">
-          <div className="row align-items-center">
+          <div className="row items-center">
             <div className="col-lg-12">
               <nav className="navbar navbar-expand-lg">
+                {/* Logo */}
                 <Link href="/" passHref>
-                  <Image src="/assets/logos/xyz.png" alt="Logo" width={120} height={30} />
+                  <Image
+                    src="/assets/logos/xyz.png"
+                    alt="XYZ Logo"
+                    width={120}
+                    height={30}
+                    priority
+                  />
                 </Link>
+
+                {/* Toggle Button for Mobile */}
                 <button
                   className="navbar-toggler"
                   type="button"
                   aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
+                  aria-expanded={isMenuOpen ? "true" : "false"}
                   aria-label="Toggle navigation"
+                  onClick={toggleMenu}
                 >
                   <span className="toggler-icon"></span>
                   <span className="toggler-icon"></span>
                   <span className="toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+
+                {/* Navigation Links */}
+                <div
+                  className={`collapse navbar-collapse sub-menu-bar ${
+                    isMenuOpen ? "show" : ""
+                  }`}
+                  id="navbarSupportedContent"
+                >
                   <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                      <Link href="#features">Features</Link>
+                      <Link href="#features">
+                        <a className="nav-link">Features</a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <Link href="#overview">Use Cases</Link>
+                      <Link href="#overview">
+                        <a className="nav-link">Use Cases</a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <Link href="#pricing">Pricing</Link>
+                      <Link href="#pricing">
+                        <a className="nav-link">Pricing</a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <Link href="#">Contact</Link>
+                      <Link href="#contact">
+                        <a className="nav-link">Contact</a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
-                <div className="button">
+
+                {/* Get Started Button */}
+                <div className="button ml-4">
                   <Link href="/signup">
-                    <span className="btn">Get Started</span>
+                    <a className="btn">Get Started</a>
                   </Link>
                 </div>
               </nav>
