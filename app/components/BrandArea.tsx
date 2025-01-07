@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
 
@@ -21,32 +22,32 @@ const BrandArea: React.FC = () => {
               <ul className="brand-list liststyle d-flex flex-wrap justify-content-center">
                 <li>
                   <a target="_blank" rel="noopener noreferrer" href="https://www.ibps.in/">
-                    <Image src="assets/images/exams/ibps.jpg" alt="IBPS Exam Logo" width={200} height={100} />
+                    <Image src="/assets/images/exams/ibps.jpg" alt="IBPS Exam Logo" width={200} height={100} />
                   </a>
                 </li>
                 <li>
                   <a target="_blank" rel="noopener noreferrer" href="https://jeemain.nta.nic.in/">
-                    <Image src="assets/images/exams/jee.jpg" alt="JEE Exam Logo" width={200} height={100} />
+                    <Image src="/assets/images/exams/jee.jpg" alt="JEE Exam Logo" width={200} height={100} />
                   </a>
                 </li>
                 <li>
                   <a target="_blank" rel="noopener noreferrer" href="https://cee.kerala.gov.in/main.php">
-                    <Image src="assets/images/exams/keam.jpg" alt="KEAM Exam Logo" width={200} height={100} />
+                    <Image src="/assets/images/exams/keam.jpg" alt="KEAM Exam Logo" width={200} height={100} />
                   </a>
                 </li>
                 <li>
                   <a target="_blank" rel="noopener noreferrer" href="https://www.nabard.org/careers-notices1.aspx?cid=693&id=26">
-                    <Image src="assets/images/exams/nabard.jpg" alt="NABARD Exam Logo" width={200} height={100} />
+                    <Image src="/assets/images/exams/nabard.jpg" alt="NABARD Exam Logo" width={200} height={100} />
                   </a>
                 </li>
                 <li>
                   <a target="_blank" rel="noopener noreferrer" href="https://neet.nta.nic.in/">
-                    <Image src="assets/images/exams/neet.jpg" alt="NEET Exam Logo" width={200} height={100} />
+                    <Image src="/assets/images/exams/neet.jpg" alt="NEET Exam Logo" width={200} height={100} />
                   </a>
                 </li>
                 <li>
                   <a target="_blank" rel="noopener noreferrer" href="https://sbi.co.in/web/careers">
-                    <Image src="assets/images/exams/sbi.jpg" alt="SBI Exam Logo" width={200} height={100} />
+                    <Image src="/assets/images/exams/sbi.jpg" alt="SBI Exam Logo" width={200} height={100} />
                   </a>
                 </li>
               </ul>

@@ -1,7 +1,8 @@
 "use client";
-import Image from "next/image";
+import Image from 'next/image';
 import Link from "next/link";
 import React, { useState } from "react";
+
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,13 +20,13 @@ const Header: React.FC = () => {
               <nav className="navbar navbar-expand-lg">
                 {/* Logo */}
                 <Link href="/" passHref>
-                  <Image
-                    src="./components/assets/logos/xyz.png"
-                    alt="XYZ Logo"
-                    width={120}
-                    height={30}
-                    priority
-                  />
+                <Image 
+                src="/assets/logos/xyz.png"
+                alt="XYZ Logo" 
+                width={100} 
+                height={100} 
+              />
+
                 </Link>
 
                 {/* Toggle Button for Mobile */}

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +8,7 @@ const HeroSection: React.FC = () => {
     <section id="hero-area" className="hero-area index2">
       <Image
         className="shape"
-        src="./components/assets/images/hero/img-wave.png"
+        src="/assets/images/hero/img-wave.png"
         alt="Wave Background"
         layout="intrinsic"  // This ensures proper aspect ratio handling
         width={1920}
@@ -40,7 +41,7 @@ const HeroSection: React.FC = () => {
             <div className="col-lg-6 col-12">
               <div className="mobile-screen">
                 <Image
-                  src="./components/assets/images/hero/app-overview.png"
+                  src="/assets/images/hero/app-overview.png"
                   alt="App Overview"
                   width={500}
                   height={500}

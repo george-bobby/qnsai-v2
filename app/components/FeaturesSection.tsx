@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -53,7 +54,7 @@ const FeaturesSection: React.FC = () => {
           <Image
             className="service-pattern wow fadeInLeft"
             data-wow-delay=".4s"
-            src="./components//assets/images/service/service-pattern.png"
+            src="/assets/images/service/service-patern.png"
             alt="Service Pattern"
             width={500}
             height={500}

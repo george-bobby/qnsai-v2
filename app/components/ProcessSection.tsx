@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -39,7 +40,7 @@ const ProcessSection: React.FC = () => {
                 <div className="col-lg-5">
                   <div className="timeline-img">
                     <Image
-                      src="./components/assets/images/timeline/timeline-1.png"
+                      src="/assets/images/timeline/timeline-1.png"
                       alt="Submitting Data"
                       width={500}
                       height={300}
@@ -58,7 +59,7 @@ const ProcessSection: React.FC = () => {
                 <div className="col-lg-5">
                   <div className="timeline-img">
                     <Image
-                      src="./components/assets/images/timeline/timeline-2.png"
+                      src="/assets/images/timeline/timeline-2.png"
                       alt="Keyword Detection"
                       width={500}
                       height={300}
@@ -103,7 +104,7 @@ const ProcessSection: React.FC = () => {
                 <div className="col-lg-5">
                   <div className="timeline-img">
                     <Image
-                      src="./components/assets/images/timeline/timeline-3.png"
+                      src="/assets/images/timeline/timeline-3.png"
                       alt="Forming Questions"
                       width={500}
                       height={300}
@@ -122,7 +123,7 @@ const ProcessSection: React.FC = () => {
                 <div className="col-lg-5">
                   <div className="timeline-img">
                     <Image
-                      src="./components/assets/images/timeline/timeline-4.png"
+                      src="/assets/images/timeline/timeline-4.png"
                       alt="Final Paper"
                       width={500}
                       height={300}
